@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/mystyle.css">
+		<title>Ταξιδιωτικός Οδηγός</title>
+	</head>
+
+	<body>
+
+		<div class="fonto"></div>
+		<ul>
+		  <li><a href="index.html">Αρχική</a></li>
+		  <li><a href="info.html">Πληροφορίες</a></li>
+		  <li><a href="fun.html">Διασκέδαση</a></li>
+		  <li><a href="travel.html">Προορισμοί</a></li>
+		  <li><a href="contact.html">Επικοινωνία</a></li>
+		</ul>
+
+		<main>
+			<div class="text text_1">				
+			</div>
+			<div class="text text_2">				 
+			</div>
+			<div class="text text_3">				
+			</div>
+		</main>
+
+		<footer class="footer">
+		  <div class="text-center">
+		    <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+		    <a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+		    <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
+		    <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus"></i></a>
+		  </div>
+		</footer>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+	        $(".text_1").animate({'top':'120px'},1000, function() {
+	        	$(".text_2").animate({'margin-left':'-60px'},1000, function() { 
+	        		$(".text_3").animate({'opacity':'1'},1500, function() {
+	        		});
+	        	});
+	        });
+	});
+	</script>
+
+	</body>
+</html>

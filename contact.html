@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/mystyle.css">
+		<title>Ταξιδιωτικός Οδηγός</title>
+		<style>
+			 #map {
+			   width: 800px;
+			   height: 500px;
+			   background-color: grey;
+			   position: absolute;
+			   top: 140px;
+			   right: 50px;
+			 }
+		</style>
+	</head>
+<body>
+	<div class="fonto_5"></div>
+		<ul>
+		  <li><a href="index.html">Αρχική</a></li>
+		  <li><a href="info.html">Πληροφορίες</a></li>
+		  <li><a href="fun.html">Διασκέδαση</a></li>
+		  <li><a href="travel.html">Προορισμοί</a></li>
+		  <li><a href="contact.html">Επικοινωνία</a></li>
+		</ul>
+<main>
+
+<div id="contact-form">
+
+		   <form method="" action="">
+			<div>
+		      <label for="name">
+		      	<span class="required">Όνομα: *</span> 
+		      	<input type="text" id="name" name="name" value="" placeholder="Το Όνομα σας" required="required" tabindex="1" autofocus="autofocus" />
+		      </label> 
+			</div>
+			<div>
+			<label for="name">
+		      	<span class="required">Επώνυμο: *</span> 
+		      	<input type="text" id="name" name="name" value="" placeholder="Το Επώνυμο σας" required="required" tabindex="2" autofocus="autofocus" />
+		      </label> 
+			</div>
+			<div>
+		      <label for="email">
+		      	<span class="required">Email: *</span>
+		      	<input type="email" id="email" name="email" value="" placeholder="Email" tabindex="3" required="required" />
+		      </label>  
+			</div>
+			<div>		          
+		      <label for="subject">
+		      <span>Θέμα: </span>
+			      <select id="subject" name="subject" tabindex="4">   
+			         <option value="hello">Τι θα θέλατε να μάθεται;</option>
+			         <option value="quote">Προσφορές</option>  
+			         <option value="general">Κρουαζιέρα</option>
+			      </select>
+		      </label>
+			</div>
+			<div>		          
+		      <label for="message">
+		      	<span class="required">Μήνυμα: *</span> 
+		      	<textarea id="message" name="message" placeholder="Παρακαλώ πληκτρολογηστε το μύναμά σας." tabindex="5" required="required"></textarea> 
+		      </label>  
+			</div>
+			<div>		           
+		      <button name="submit" type="submit" id="submit" >Αποστολή</button> 
+			</div>
+		   </form>
+
+	</div>
+
+    <div id="map"></div>
+</main>
+		<footer class="footer">
+		  <div class="text-center">
+		    <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+		    <a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+		    <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
+		    <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus"></i></a>
+		  </div>
+		</footer>
+    <script>
+      function initMap() {
+        var uluru = {lat: 37.563, lng: 22.544};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7lnwlD4C2bgB9fVRmGJeJUySVjBIS5U4&callback=initMap">
+    </script>
+
+
+</body>
+</html>

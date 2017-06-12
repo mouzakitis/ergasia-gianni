@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/mystyle.css">
+		<title>Ταξιδιωτικός Οδηγός</title>
+	</head>
+
+<body>
+
+	<div class="fonto_3"></div>
+
+		<ul>
+		  <li><a href="index.html">Αρχική</a></li>
+		  <li><a href="info.html">Πληροφορίες</a></li>
+		  <li><a href="fun.html">Διασκέδαση</a></li>
+		  <li><a href="travel.html">Προορισμοί</a></li>
+		  <li><a href="contact.html">Επικοινωνία</a></li>
+		</ul>
+
+<main class="container overlay">
+
+		<div class="night_1"><img src="img/night_1.jpg" width="1280" height="720"></div>
+
+		<div class="night_2"><img src="img/night_2.jpg" width="1280" height="720"></div>
+
+		<div class="night_3"><img src="img/night_3.jpg" width="1280" height="540"></div>
+
+		<div class="night_4"><img src="img/night_4.jpg" width="1280" height="720"></div>
+
+		<div class="night_5"><img src="img/night_5.jpg" width="1280" height="720"></div>
+
+		<div class="night_6"><img src="img/night_6.jpg" width="1280" height="720"></div>
+
+		<div class="button_left"><img src="img/button_left.png" /></div>
+
+        <div class="button_right"><img src="img/button_right.png" /></div>  	
+
+</main>
+
+	<script>
+
+	var slideria_nums = ["night_1", "night_2", "night_3", "night_4", "night_5", "night_6"];
+	var slideria_temp = "";
+    var slideria_i;
+
+    //left
+    $('.button_left').on("click", function () {
+        slideria_left();
+    });
+
+    //right
+    $('.button_right').on("click", function () {
+        slideria_right();
+    });
+
+    function slideria_left() {
+
+    slideria_temp = slideria_nums[0];
+    for (slideria_i = 1; slideria_i < slideria_nums.length; slideria_i++) {
+        slideria_nums[slideria_i - 1] = slideria_nums[slideria_i];
+    }
+    slideria_nums[slideria_nums.length - 1] = slideria_temp;
+
+    $('.' + slideria_nums[0] + '').animate({ 'opacity': 0.6, 'margin-left': '-760px', 'z-index': '1', 'height': '660', 'margin-top': '-350px'}, 700);
+    $('.' + slideria_nums[1] + '').animate({ 'opacity': 0.8, 'margin-left': '-700px', 'z-index': '3', 'height': '680', 'margin-top': '-360px'}, 700);
+    $('.' + slideria_nums[2] + '').animate({ 'opacity': 1, 'margin-left': '-640px', 'z-index': '6', 'height': '700', 'margin-top': '-370px' }, 700);
+    $('.' + slideria_nums[3] + '').animate({ 'opacity': 0.8, 'margin-left': '-580px', 'z-index': '3', 'height': '680', 'margin-top': '-360px'}, 700);
+    $('.' + slideria_nums[4] + '').animate({ 'opacity': 0.6, 'margin-left': '-520px', 'z-index': '1', 'height': '660', 'margin-top': '-350px'}, 700);
+    $('.' + slideria_nums[5] + '').animate({ 'opacity': 0, 'margin-left': '-640px', 'z-index': '1', 'height': '700', 'margin-top': '-370px'}, 700);
+
+
+}
+	function slideria_right() {
+
+
+
+    slideria_temp = slideria_nums[slideria_nums.length - 1];
+    for (slideria_i = slideria_nums.length - 1; slideria_i > 0; slideria_i--) {
+        slideria_nums[slideria_i] = slideria_nums[slideria_i - 1];
+    }
+    slideria_nums[0] = slideria_temp;
+
+    $('.' + slideria_nums[0] + '').animate({ 'opacity': 0.6, 'margin-left': '-760px', 'z-index': '1', 'height': '660', 'margin-top': '-350px'}, 700);
+    $('.' + slideria_nums[1] + '').animate({ 'opacity': 0.8, 'margin-left': '-700px', 'z-index': '3', 'height': '680', 'margin-top': '-360px'}, 700);
+    $('.' + slideria_nums[2] + '').animate({ 'opacity': 1, 'margin-left': '-640px', 'z-index': '6', 'height': '700', 'margin-top': '-370px' }, 700);
+    $('.' + slideria_nums[3] + '').animate({ 'opacity': 0.8, 'margin-left': '-580px', 'z-index': '3', 'height': '680', 'margin-top': '-360px'}, 700);
+    $('.' + slideria_nums[4] + '').animate({ 'opacity': 0.6, 'margin-left': '-520px', 'z-index': '1', 'height': '660', 'margin-top': '-350px'}, 700);
+    $('.' + slideria_nums[5] + '').animate({ 'opacity': 0, 'margin-left': '-640px', 'z-index': '1', 'height': '700', 'margin-top': '-370px'}, 700);
+
+}
+
+</script>
+
+<script type="text/javascript">
+		$(document).ready(function(){
+	        $(".container").animate({'opacity':'1'},2000, function() {
+	        	$(".overlay").animate({'width':'100%'},2000, function() {
+	        });
+	    });
+	});
+	</script>
+</body>
+</html>
