@@ -80,12 +80,6 @@ table {
    border-spacing: 0;
 }
 
-
-
-
-
-
-
 html, body {
   max-width: 100%;
   height: auto;
@@ -150,6 +144,8 @@ li a:hover {
 
 .text_1{
     position: absolute;
+    top: 50%;
+    margin-top: -100px;
     left: 50%;
     margin-left: -300px;
     top: -200px;
@@ -159,14 +155,14 @@ li a:hover {
     position: absolute;
     left: 50%;
     margin-left: -2070px;
-    top: 245px;
+    top: 200px;
 }
 
 .text_3{
     position: absolute;
     left: 50%;
     margin-left:-390px;
-    top: 390px;
+    top: 340px;
     opacity: 0;
 }
 
@@ -712,12 +708,12 @@ input:required, textarea:required {
 
     .text_2{
         margin-left: -2070px;
-        top: 235px;
+        top: 195px;
     }
 
     .text_3{
         margin-left:-300px;
-        top: 340px;
+        top: 310px;
         opacity: 0;
     }
 
@@ -739,7 +735,6 @@ input:required, textarea:required {
 
     .text {
         font-size: 60px;
-        -webkit-text-stroke: 1px #000;
     }
 
     .text_1{
@@ -750,23 +745,20 @@ input:required, textarea:required {
 
     .text_2{
         margin-left: -2070px;
-        top: 205px;
+        top: 155px;
     }
 
     .text_3{
         margin-left: -270px;
-        top: 290px;
+        top: 240px;
         opacity: 0;
     }
-
-/********FOOTER CSS ***************/
     footer{
         position: absolute;
         width: 100%;
         height: 50px;
         bottom: 0;
     }
-
     .footer {
       padding: 8px 0;
     }
@@ -789,8 +781,7 @@ input:required, textarea:required {
     }
 
     .text {
-        font-size: 60px;
-        -webkit-text-stroke: 1px #000;
+        font-size: 50px;
     }
 
     .text_1{
@@ -802,12 +793,12 @@ input:required, textarea:required {
 
     .text_2{
         margin-left: -2070px;
-        top: 205px;
+        top: 165px;
     }
 
     .text_3{
         margin-left: -180px;
-        top: 280px;
+        top: 250px;
     }
 
     .footer {
@@ -819,7 +810,7 @@ input:required, textarea:required {
     }
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 420px) and (orientation: portrait) {
 
     li {
         font-size: 10px;
@@ -829,7 +820,7 @@ input:required, textarea:required {
         padding: 3px 5px;
     }
     .text {
-        font-size: 60px;
+        font-size: 40px;
     }
 
     .text_1{
@@ -838,12 +829,85 @@ input:required, textarea:required {
     }
     .text_2{
         margin-left: -2070px;
-        top: 205px;
+        top: 165px;
     }
 
     .text_3{
-        margin-left: -180px;
-        top: 280px;
+        margin-left: -170px;
+        top: 240px;
+    }
+
+    .footer {
+      padding: 8px 0;
+    }
+    .footer a {
+      font-size: 25px;
+      padding: 8px;
+    }
+}
+
+@media only screen and (max-width: 640px) and (orientation: landscape) {
+
+    li {
+        font-size: 10px;
+    }
+
+    li a {
+        padding: 3px 5px;
+    }
+    .text {
+        font-size: 40px;
+    -webkit-text-stroke: 1px #000;
+
+    }
+
+    .text_1{
+        margin-left: -140px;
+        top: -200px;
+    }
+    .text_2{
+        margin-left: -2070px;
+        top: 135px;
+    }
+
+    .text_3{
+        margin-left: -170px;
+        top: 190px;
+    }
+
+    .footer {
+      padding: 8px 0;
+    }
+    .footer a {
+      font-size: 25px;
+      padding: 8px;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    li {
+        font-size: 10px;
+    }
+
+    li a {
+        padding: 3px 5px;
+    }
+    .text {
+        font-size: 40px;
+    }
+
+    .text_1{
+        margin-left: -100px;
+        top: -200px;
+    }
+    .text_2{
+        margin-left: -2070px;
+        top: 135px;
+    }
+
+    .text_3{
+        margin-left: -140px;
+        top: 180px;
     }
 
     .footer {
