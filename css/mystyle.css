@@ -699,7 +699,7 @@ input:required, textarea:required {
 /*********************MEDIA QUERIES**************/
 
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1300px) {
 
     .text {
         font-size: 80px;
